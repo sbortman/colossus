@@ -1,0 +1,22 @@
+include 'colossus-app',
+	'colossus-core',
+	'colossus-geodata',
+	'colossus-geoscript',
+	'colossus-hibernate-spatial',
+	'colossus-oms',
+	'colossus-openlayers',
+	'colossus-wfs',
+	'colossus-wms'
+
+// Plugins
+project(':colossus-core').projectDir = 'plugins/colossus-core' as File
+project(':colossus-geodata').projectDir = 'plugins/colossus-geodata' as File
+project(':colossus-geoscript').projectDir = 'plugins/colossus-geoscript' as File
+project(':colossus-hibernate-spatial').projectDir = 'plugins/colossus-hibernate-spatial' as File
+project(':colossus-oms').projectDir = 'plugins/colossus-oms' as File
+project(':colossus-openlayers').projectDir = 'plugins/colossus-openlayers' as File
+project(':colossus-wfs').projectDir = 'plugins/colossus-wfs' as File
+project(':colossus-wms').projectDir = 'plugins/colossus-wms' as File
+
+// Apps
+project(':colossus-app').projectDir = 'apps/colossus-app' as File
